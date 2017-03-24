@@ -1,0 +1,15 @@
+extends ../layout
+block content
+    table.table
+        tr
+            th="Name"
+            th="Age"
+            th="Gender"
+            th="Phone"
+        #list
+            for stu in list
+                tr
+                    td=stu.name
+                    td=stu.age
+                    td=stu.gender
+                    td=stu.phone
